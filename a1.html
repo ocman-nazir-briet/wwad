@@ -1,0 +1,507 @@
+n<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Homepage</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" src="style.css">
+  <style>
+    #myImage {
+      /*        position: absolute;*/
+      float: right;
+
+    }
+
+    #myVideo {
+      /*        position: absolute;*/
+      float: right;
+      /*        position: relative;*/
+      bottom: 20;
+      right: 0;
+
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .logo-container img {
+      height: 50px;
+    }
+
+    .navbar-items {
+      display: flex;
+      list-style: none;
+    }
+
+    .navbar-items li {
+      margin: 0 10px;
+    }
+
+    .navbar-items li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .search-container form {
+      display: flex;
+    }
+
+    .search-container input[type="text"] {
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 5px;
+    }
+
+    .search-container button {
+      padding: 5px 10px;
+      background-color: #fff;
+      color: #222;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .dark-background {
+      background-color: rgb(0, 0, 0, 0.9);
+    }
+
+    .white-background {
+      background-color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+
+<body>
+
+  <section style="background-color:#febe00; width: 100%; height:fit-content;">
+    <nav>
+      <div class="navbar-container" style="margin:0; padding:0;">
+        <div class="logo-container">
+          <a href="#"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <ul class="navbar-items mr-auto mt-3">
+          <li><a style="font-size:20px; font-weight: 500;" class="ml-3" href="#">Home</a></li>
+          <li><a style="font-size:20px; font-weight: 500;" class="ml-3" href="#">About</a></li>
+          <li><a style="font-size:20px; font-weight: 500;" class="ml-3" href="#">Services</a></li>
+          <li><a style="font-size:20px; font-weight: 500;" class="ml-3" href="#">Contact</a></li>
+        </ul>
+        <div class="search-container">
+          <form action="#">
+            <input type="text" class="rounded-0 mr-0 pr-0" style="background-color: #febe00;" placeholder="Search...">
+            <button type="submit" class="ml-0 rounded-0" style="background-color: #24a0ed;"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <br><br>
+    <br><br>
+    <br><br>
+    <div class="d-flex justify-content-between">
+      <div class=" pl-5" style="width: 50%; margin-left: 8rem; padding-left: 4px;">
+        <h1 style="color:white; font-size: 80px;"><b>First I wanted to be a Vetrinarian</b></h1>
+        <p style="color:white">Lorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolorLorem Ipsum
+          dolorLorem Ipsum dolor Lorem Ipsum dolorLorem Ipsum
+          dolorLorem IpsumdolorLorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolorLorem Ipsum
+          dolorLorem Ipsum dolorLorem Ipsum dolor
+        </p>
+        <button class="btn btn-info" style="border: 2px solid #24a0ed;">Contact US</button>
+        <button class="btn btn-info" style="background-color:transparent; border: 2px solid white;">Our
+          Services</button>
+
+      </div>
+
+      <img id="myImage" src="dog.png" alt="My Image">
+    </div>
+  </section>
+
+
+
+
+  <section style="background-color:white; width: 100%; position: absolute;" class="py-2 my-2">
+    <br><br>
+    <br><br>
+    <br><br>
+    <div class=" pl-5" style="width: 40%; margin-left: 8rem; padding-left: 4px;">
+      <h1 style="color:black;">As a vetrinarian and lover of animals</h1>
+      <p style="color:black">Lorem Ipsum dolorLorem Ipsum dolor Lorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolor</p>
+      <button class="btn btn-warning" style="color:white">Our Services</button>
+    </div>
+    <img style="position: absolute; top: 230px; left: 820px;" src="yellow.png" alt="My Image">
+    <img style="position: absolute;top: 5px;left: 860px; height:400px" src="b1.png" alt="My Image">
+    <img style="position: absolute;top: 5px;left: 860px; height:400px" src="b1-upper.png" alt="My Image">
+    <img style="position: absolute;top: 174px;left: 1038px; height:70px" src="icon.png" alt="My Image">
+    <img style="position: absolute;top: 194px;left: 1063px; height:30px" src="icon-inner.png" alt="My Image">
+  </section>
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+
+
+
+
+  <!-- Services -->
+  <section class="py-5 my-3" style="background-color:#febe00;">
+    <div>
+      <h1 class="d-flex justify-content-center" style='color:white;'><b>Title Here</b></h1>
+      <p class="d-flex justify-content-center" style='color:white;'>Lorem Ipsum dolorLorem Ipsum dolorLorem Ipsum
+        dolorLorIpsum dolor</p>
+      <p class="d-flex justify-content-center" style='color:white;'>Ipsum dolorLorem Ipsum dolorLorem Ipsum dolorLorem
+        Ipsum dolor
+      </p>
+    </div>
+
+    <div class="container px-2 my-2" style="">
+      <div class="card-deck py-4 my-4" style="background-color:#febe00;">
+        <div class="card" style="background-color:#febe00; border: 0px;">
+          <img src="d1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <center>
+              <h5 class="card-title" style="color: white;">vetrinarian</h5>
+              <p class="card-title" style="color: white;">As a vetrinarian and love of animals.As a vetrinarian and love
+                of animals.As a vetrinarian and love of animals</p>
+            </center>
+          </div>
+        </div>
+        <div class="card" style="background-color:#febe00; border: 0px;">
+          <img src="d2.png" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color:#febe00; border: 0px;">
+            <center>
+              <h5 class="card-title" style="color: white;">vetrinarian</h5>
+              <p class="card-title" style="color: white;">As a vetrinarian and love of animals.As a vetrinarian and love
+                of animals.As a vetrinarian and love of animals</p>
+            </center>
+          </div>
+        </div>
+        <div class="card" style="background-color:#febe00; border: 0px;">
+          <img src="d3.png" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color:#febe00; border: 0px;">
+            <center>
+              <h5 class="card-title" style="color: white;">vetrinarian</h5>
+              <p class="card-title" style="color: white;">As a vetrinarian and love of animals.As a vetrinarian and love
+                of animals.As a vetrinarian and love of animals</p>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Reverse -->
+  <section style="background-color:white; width: 100%; position: absolute;" class="py-2 my-2">
+    <br><br>
+    <br><br>
+    <br><br>
+    <div class=" pl-5 mx-5" style="width: 40%; margin-left: 8rem; padding-left: 4px;  text-align:right;float: right;">
+      <h1 style="color:#202A44; font-size: 50px"><b>As a vetrinarian and lover of animals</b></h1>
+      <p style="color:#202A44">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit illo suscipit aliquam sit officiis earum assumenda totam eveniet accusantium ab, labore molestiae temporibus dolorem repellendus iste eos architecto natus nemo.</p>
+      <button class="btn btn-warning" style="color:white">Our Services</button>
+    </div>
+    <img style="position: absolute; top: 245px; left: 100px;" src="yellow.png" alt="My Image">
+    <img style="position: absolute;top: 5px;left: 150px; height:400px" src="b1.png" alt="My Image">
+    <img style="position: absolute;top: 5px;left: 150px; height:400px" src="b1-upper.png" alt="My Image">
+    <img style="position: absolute;top: 174px;left: 330px; height:70px" src="icon.png" alt="My Image">
+    <img style="position: absolute;top: 194px;left: 355px; height:30px" src="icon-inner.png" alt="My Image">
+  </section>
+
+  <br> <br> <br> <br> <br>
+  <br> <br> <br> <br> <br>
+  <br> <br> <br> <br> <br>
+  <br> <br> <br> <br> <br>
+
+
+
+
+  <!-- prices -->
+  <section class="py-5 my-3" style="background-color:#febe00;">
+    <div>
+      <h1 class="d-flex justify-content-center" style='color:white;'><b>Title Here</b></h1>
+      <p class="d-flex justify-content-center" style='color:white;'>Lorem Ipsum dolorLorem Ipsum dolorLorem Ipsum
+        dolorLorIpsum dolor</p>
+      <p class="d-flex justify-content-center" style='color:white;'>Ipsum dolorLorem Ipsum dolorLorem Ipsum dolorLorem
+        Ipsum dolor</p>
+
+    </div>
+
+    <div class="container px-2 my-2">
+      <div class="card-deck py-4 my-4" style="background-color:#febe00;">
+        <div class="card" style="background-color:#febe00; border: 0px;">
+          <img src="dd1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <center>
+              <h5 class="card-title" style="color: white; font-size:30px;"><span style="text-decoration: line-through;">$1000</span> $1000</h5>
+              <button class="btn btn-info rounded-pill" style="border-radius:5px;">Buy Now</button>
+            </center>
+          </div>
+        </div>
+        <div class="card" style="background-color:#febe00; border: 0px;">
+          <img src="dd2.png" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color:#febe00; border: 0px;">
+            <center>
+              <h5 class="card-title" style="color: white;font-size:30px;"><span style="text-decoration: line-through;">$1000</span> $1000</h5>
+              <button class="btn btn-info rounded-pill">Buy Now</button>
+
+            </center>
+          </div>
+        </div>
+        <div class="card" style="background-color:#febe00; border: 0px;">
+          <img src="dd3.png" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color:#febe00; border: 0px;">
+            <center>
+              <h5 class="card-title" style="color: white; ; font-size:30px;"><span style="text-decoration: line-through;">$1000</span> $1000</h5>
+              <button class="btn btn-info rounded-pill">Buy Now</button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- team -->
+  <section class="py-5 my-3">
+    <div>
+      <h1 class="d-flex justify-content-center" style='color:#202A44;'><b>The Vetcare Team</b></h1>
+      <p class="d-flex justify-content-center" style='color:#202A44;'>Lorem Ipsum dolorLorem Ipsum dolorLorem Ipsum
+        dolorLorIpsum dolor</p>
+
+    </div>
+
+    <div class="container px-2 my-2">
+      <div class="card-deck py-4 my-4">
+        <div class="card" style="background-color:white; border: 0px;">
+          <img src="p1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <center style="background-color:white; border: 0px;">
+              <h5 class="card-title" style="color: #202A44;">vetrinarian</h5>
+              <p class="card-title" style="color: #202A44;">As a vetrinarian and love of animals.As a vetrinarian and
+                love of animals.As a vetrinarian and love of animals</p>
+                <div>
+                  <button style="border:0px; background-color: white;"><img width="40" class="rounded-pill" style="background-color: #febe00;" src="Instagram.png"></button>
+                  <button style="border:0px; background-color: white;"><img width="40" class="rounded-pill" style="background-color: #febe00;" src="Facebook.png"></button>
+                  <button style="border:0px; background-color: white;"><img width="40" class="rounded-pill" style="background-color: #febe00;" src="Twitter.png"></button>
+                  <button style="border:0px; background-color: white;"><img width="40" class="rounded-pill" style="background-color: #febe00;" src="WhatsApp.png"></button>
+                </div>
+            </center>
+          </div>
+        </div>
+        <div class="card" style="background-color:white; border: 0px;">
+          <img src="p2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <center>
+              <h5 class="card-title" style="color: #202A44;">vetrinarian</h5>
+              <p class="card-title" style="color: #202A44;">As a vetrinarian and love of animals.As a vetrinarian and
+                love of animals.As a vetrinarian and love of animals</p>
+                <div>
+                  <button style="border:0px; background-color: white;"><img width="40" class="rounded-pill" style="background-color: #febe00;" src="Instagram.png"></button>
+                  <button style="border:0px; background-color: white;"><img width="40" class="rounded-pill" style="background-color: #febe00;" src="Facebook.png"></button>
+                  <button style="border:0px; background-color: white;"><img width="40" class="rounded-pill" style="background-color: #febe00;" src="Twitter.png"></button>
+                  <button style="border:0px; background-color: white;"><img width="40" class="rounded-pill" style="background-color: #febe00;" src="WhatsApp.png"></button>
+                </div>
+            </center>
+          </div>
+        </div>
+        <div class="card" style="background-color:white; border: 0px;">
+          <img src="p3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <center>
+              <h5 class="card-title" style="color: #202A44;">vetrinarian</h5>
+              <p class="card-title" style="color: #202A44;">As a vetrinarian and love of animals.As a vetrinarian and
+                love of animals.As a vetrinarian and love of animals</p>
+                <div>
+                  <button style="border:0px; background-color: white;"><img width="40" class="rounded-pill" style="background-color: #febe00;" src="Instagram.png"></button>
+                  <button style="border:0px; background-color: white;"><img width="40" class="rounded-pill" style="background-color: #febe00;" src="Facebook.png"></button>
+                  <button style="border:0px; background-color: white;"><img width="40" class="rounded-pill" style="background-color: #febe00;" src="Twitter.png"></button>
+                  <button style="border:0px; background-color: white;"><img width="40" class="rounded-pill" style="background-color: #febe00;" src="WhatsApp.png"></button>
+                </div>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section style="background-color: #febe00;">
+    <div class="container px-2 my-2">
+      <div class="card-deck py-4 my-4" style="background-color:#febe00;">
+        <div class="card" style="background-color:#febe00; border: 0px;">
+          <center>
+          <img src="heart.png" class="card-img-top" style="width:50px;" alt="...">
+          <div class="card-body" style="background-color:#febe00; border: 0px;">
+              <h5 class="card-title" style="color: white; ; font-size:30px;">+34793</h5>
+              <h5 class="card-title" style="color: white; ; font-size:30px;">Happy Clients</h5>
+          </div>
+        </center>
+        </div>
+
+        <div class="card" style="background-color:#febe00; border: 0px;">
+          <center>
+          <img src="heart.png" class="card-img-top" style="width:50px;" alt="...">
+          <div class="card-body" style="background-color:#febe00; border: 0px;">
+              <h5 class="card-title" style="color: white; ; font-size:30px;">+45382</h5>
+              <h5 class="card-title" style="color: white; ; font-size:30px;">Departments</h5>
+          </div>
+        </center>
+        </div>
+
+        <div class="card" style="background-color:#febe00; border: 0px;">
+          <center>
+          <img src="heart.png" class="card-img-top" style="width:50px;" alt="...">
+          <div class="card-body" style="background-color:#febe00; border: 0px;">
+              <h5 class="card-title" style="color: white; ; font-size:30px;">+54762</h5>
+              <h5 class="card-title" style="color: white; ; font-size:30px;">Vaccinations</h5>
+          </div>
+        </center>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- Recent Posts -->
+  <div>
+    <h1 class="d-flex justify-content-center" style='color: RGB (11, 11, 69,0.5);'>Recent Posts</h1>
+    <p class="d-flex justify-content-center" style='color: RGB (11, 11, 69, 0.5);'>Lorem Ipsum dolorLorem Ipsum
+      dolorLorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolorLorem Ipsum dolor</p>
+  </div>
+
+  <section class="py-5" style="background-color:white;">
+    <div class="container px-2 my-2" style="background-color:white;">
+      <div class="card-deck">
+        <div class="card">
+          <img src="blog1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">As a vetrinarian and love of animals</h5>
+            <p style="color:rgb(0,171,240)"><b>May 04, 2023</b></p>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <h5 style="color:rgb(0,171,240)">Read More+</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="blog2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">As a vetrinarian and love of animals</h5>
+            <p style="color:rgb(0,171,240)"><b>May 04, 2023</b></p>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <h5 style="color:rgb(0,171,240)">Read More+</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="blog3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">As a vetrinarian and love of animals</h5>
+            <p style="color:rgb(0,171,240)"><b>May 04, 2023</b></p>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <h5 style="color:rgb(0,171,240)">Read More+</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Footer -->
+  <div class="py-5" style="background:url('footer-back.png');">
+    <section>
+      <div class="container mx-auto px-0" style="color:white;">
+        <footer class="pt-2 px-0">
+          <div class="row">
+            <div class="col-2">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+
+            <div class="col-2">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+
+            <div class="col-2">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+
+            <div class="col-4 offset-1">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                  <input id="newsletter1" type="text" class="form-control rounded-0" placeholder="Email address">
+                  <button class="btn-sm btn-primary py-0 rounded-0" type="button"><img class="py-0"
+                      src="https://img.icons8.com/material-rounded/24/null/filled-sent.png" /></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
