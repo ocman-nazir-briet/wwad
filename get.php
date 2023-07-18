@@ -11,6 +11,7 @@
     $userData = $result->fetch_assoc();
 
     // Access the user data
+    
     if ($userData) {
         $firstName = $userData['firstName'];
         $lastName = $userData['lastName'];
