@@ -12,6 +12,7 @@
 
     // Access the user data
     
+    
     if ($userData) {
         $firstName = $userData['firstName'];
         $lastName = $userData['lastName'];
